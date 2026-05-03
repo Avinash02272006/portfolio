@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avinash R | AI & Data Science Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <nav class="navbar">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="mobile-toggle" onclick="toggleMenu()">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="hamburger">
+        <path d="M4 6H20M4 12H20M4 18H20" stroke="white" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <span class="hero-greeting">Hello, I'm</span>
+    <h1 class="hero-name">Avinash R</h1>
+    <div class="hero-headline">
+      <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+    </div>
+    <p class="hero-desc">
+      AI & Data Science Student | Full-Stack Developer | Creative Technologist
+      <br>
+      Building next-gen intelligent applications.
+    </p>
+    <div class="btn-group">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          I am an <span class="highlight">Artificial Intelligence & Data Science</span> student at SNS College of
+          Engineering, passionate about building the future of tech.
+          With a strong foundation in <span class="highlight">Full-Stack Development</span> and <span
+            class="highlight">AI/ML</span>, I bridge the gap between complex algorithms and intuitive user experiences.
+        </p>
+        <p>
+          My journey involves exploring <span class="highlight">Game Development</span>, <span class="highlight">UI/UX
+            Design</span>, and <span class="highlight">Futuristic Technologies</span>.
+          I thrive on problem-solving and innovation, constantly pushing boundaries to create impactful digital
+          solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Technical Arsenal</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-name">Python</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-name">C / C++</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-name">JavaScript</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-name">React.js</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-name">HTML & CSS</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-name">AI / ML / LLM</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-name">Figma</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-name">Photoshop</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <span class="date">Mar 2025 – Jul 2025</span>
+          <h3>SNS Innovation Hub</h3>
+          <p>Full Stack Developer & Graphic Designer</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <span class="date">May 2024 – Jun 2024</span>
+          <h3>Nandha Infotech</h3>
+          <p>Full Stack Development Intern</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3 class="project-title">AI Personal Health Assistant</h3>
+          <p class="project-desc">An intelligent LLM-powered assistant providing personalized health insights and
+            monitoring.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">LLM</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">AI</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-info">
+          <h3 class="project-title">Decentralized Key Exchange</h3>
+          <p class="project-desc">Secure communication protocol using decentralized networks for cryptographic key
+            exchange.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Cryptography</span>
+            <span class="tech-tag">Blockchain</span>
+            <span class="tech-tag">Network Security</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-info">
+          <h3 class="project-title">Deepfake Detection</h3>
+          <p class="project-desc">Advanced detection system using deep learning to identify synthetic media and
+            deepfakes.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Deep Learning</span>
+            <span class="tech-tag">Computer Vision</span>
+            <span class="tech-tag">Python</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-info">
+          <h3 class="project-title">Thermal IR Super Resolution</h3>
+          <p class="project-desc">Optical guided super-resolution technique to enhance low-res thermal imagery.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Image Processing</span>
+            <span class="tech-tag">CNN</span>
+            <span class="tech-tag">OpenCV</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-container">
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%">Send Message</button>
+      </form>
+
+      <div class="social-links">
+        <a href="#" class="social-icon">GitHub</a>
+        <a href="#" class="social-icon">LinkedIn</a>
+        <a href="mailto:avinash02tpt@gmail.com" class="social-icon">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; __a_v_in__</p>
+  </footer>
+
+  <script>
+    
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    
+    const textElement = document.getElementById('typing-text');
+    const phrases = ["Building Intelligent Systems.", "Designing the Future.", "Exploring AI & Data Science."];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+
+    function type() {
+      const currentPhrase = phrases[phraseIndex];
+
+      if (isDeleting) {
+        textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 50;
+      } else {
+        textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 100;
+      }
+
+      if (!isDeleting && charIndex === currentPhrase.length) {
+        isDeleting = true;
+        typeSpeed = 2000; 
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        typeSpeed = 500; 
+      }
+
+      setTimeout(type, typeSpeed);
+    }
+
+    document.addEventListener('DOMContentLoaded', type);
+
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.getElementById('nav-links').classList.remove('active');
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
