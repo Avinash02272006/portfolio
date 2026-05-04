@@ -15,6 +15,8 @@
 
 <body>
   <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
   <div class="bg-glow bg-glow-1"></div>
   <div class="bg-glow bg-glow-2"></div>
@@ -156,6 +158,9 @@
             <span class="tech-tag">AI</span>
           </div>
         </div>
+        <div class="project-overlay">
+          <span>Explore Project &rarr;</span>
+        </div>
       </div>
 
       <div class="project-card reveal-scale delay-200" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true"
@@ -169,6 +174,9 @@
             <span class="tech-tag">Blockchain</span>
             <span class="tech-tag">Network Security</span>
           </div>
+        </div>
+        <div class="project-overlay">
+          <span>Explore Project &rarr;</span>
         </div>
       </div>
 
@@ -184,6 +192,9 @@
             <span class="tech-tag">Python</span>
           </div>
         </div>
+        <div class="project-overlay">
+          <span>Explore Project &rarr;</span>
+        </div>
       </div>
 
       <div class="project-card reveal-scale delay-400" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true"
@@ -196,6 +207,9 @@
             <span class="tech-tag">CNN</span>
             <span class="tech-tag">OpenCV</span>
           </div>
+        </div>
+        <div class="project-overlay">
+          <span>Explore Project &rarr;</span>
         </div>
       </div>
     </div>
@@ -230,16 +244,52 @@
     <p>&copy; __a_v_in__</p>
   </footer>
 
+  <button id="back-to-top" class="back-to-top" title="Go to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
     integrity="sha512-wC/g5368cx-BE20u/a3x2bCgZk502RgvF/O37LzX8rM1tVmtNExhIXXW08z7w9T+1sT0kL19iQhQ1L4u4/nUHQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
-    // Cursor Tracking Glow
+    // Cursor Tracking
     const cursorGlow = document.querySelector('.cursor-glow');
+    const cursorDot = document.querySelector('.cursor-dot');
+    const cursorRing = document.querySelector('.cursor-ring');
+
     document.addEventListener('mousemove', (e) => {
       cursorGlow.style.left = e.clientX + 'px';
       cursorGlow.style.top = e.clientY + 'px';
+      cursorDot.style.left = e.clientX + 'px';
+      cursorDot.style.top = e.clientY + 'px';
+      
+      setTimeout(() => {
+        cursorRing.style.left = e.clientX + 'px';
+        cursorRing.style.top = e.clientY + 'px';
+      }, 50);
+    });
+
+    // Hover effect for cursor
+    const interactiveElements = document.querySelectorAll('a, button, .project-card, .skill-card, .social-icon, input, textarea');
+    interactiveElements.forEach(el => {
+      el.addEventListener('mouseenter', () => cursorRing.classList.add('hover-active'));
+      el.addEventListener('mouseleave', () => cursorRing.classList.remove('hover-active'));
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById("back-to-top");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add("show");
+      } else {
+        backToTopBtn.classList.remove("show");
+      }
+    });
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
     // Scroll Reveal Animation
