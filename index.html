@@ -357,7 +357,11 @@
       setTimeout(type, typeSpeed);
     }
 
-    document.addEventListener('DOMContentLoaded', type);
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', type);
+    } else {
+      type();
+    }
 
     // Smooth Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
