@@ -51,16 +51,43 @@ body {
     transition: width 0.3s, height 0.3s;
 }
 
-/* --- Reveal Animation --- */
-.reveal {
+/* --- Reveal Animations --- */
+.reveal, .reveal-left, .reveal-right, .reveal-scale {
     opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    filter: blur(10px);
+    transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
-.reveal.active {
+
+.reveal {
+    transform: translateY(50px);
+}
+
+.reveal-left {
+    transform: translateX(-50px);
+}
+
+.reveal-right {
+    transform: translateX(50px);
+}
+
+.reveal-scale {
+    transform: scale(0.9);
+}
+
+.reveal.active, .reveal-left.active, .reveal-right.active, .reveal-scale.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0) scale(1);
+    filter: blur(0);
 }
+
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+.delay-600 { transition-delay: 600ms; }
+.delay-700 { transition-delay: 700ms; }
+.delay-800 { transition-delay: 800ms; }
 
 /* --- Global Styles --- */
 h1, h2, h3, h4 {
