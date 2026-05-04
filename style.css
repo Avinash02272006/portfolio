@@ -179,8 +179,7 @@ section {
     margin: 0 auto 4rem auto;
     color: white;
     position: relative;
-    display: block;
-    width: fit-content;
+    display: table;
     background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
