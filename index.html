@@ -8,12 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@400;500;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="cursor-glow"></div>
 
   <div class="bg-glow bg-glow-1"></div>
   <div class="bg-glow bg-glow-2"></div>
@@ -37,25 +38,25 @@
   </nav>
 
   <section id="hero">
-    <span class="hero-greeting">Hello, I'm</span>
-    <h1 class="hero-name">Avinash R</h1>
-    <div class="hero-headline">
+    <span class="hero-greeting reveal">Hello, I'm</span>
+    <h1 class="hero-name reveal">Avinash R</h1>
+    <div class="hero-headline reveal">
       <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
     </div>
-    <p class="hero-desc">
+    <p class="hero-desc reveal">
       AI & Data Science Student | Full-Stack Developer | Creative Technologist
       <br>
       Building next-gen intelligent applications.
     </p>
-    <div class="btn-group">
+    <div class="btn-group reveal">
       <a href="#projects" class="btn btn-primary">View Projects</a>
       <a href="#contact" class="btn btn-outline">Contact Me</a>
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="reveal">
     <h2 class="section-title">About Me</h2>
-    <div class="about-content">
+    <div class="about-content" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.1">
       <div class="about-text">
         <p>
           I am an <span class="highlight">Artificial Intelligence & Data Science</span> student at SNS College of
@@ -73,48 +74,56 @@
     </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="reveal">
     <h2 class="section-title">Technical Arsenal</h2>
     <div class="skills-grid">
-      <div class="skill-card">
+      <div class="skill-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
+        <div class="skill-icon">🐍</div>
         <div class="skill-name">Python</div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
+        <div class="skill-icon">⚙️</div>
         <div class="skill-name">C / C++</div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
+        <div class="skill-icon">⚡</div>
         <div class="skill-name">JavaScript</div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
+        <div class="skill-icon">⚛️</div>
         <div class="skill-name">React.js</div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
+        <div class="skill-icon">🌐</div>
         <div class="skill-name">HTML & CSS</div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
+        <div class="skill-icon">🧠</div>
         <div class="skill-name">AI / ML / LLM</div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
+        <div class="skill-icon">🎨</div>
         <div class="skill-name">Figma</div>
       </div>
-      <div class="skill-card">
+      <div class="skill-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
+        <div class="skill-icon">🖼️</div>
         <div class="skill-name">Photoshop</div>
       </div>
     </div>
   </section>
 
-  <section id="experience">
+  <section id="experience" class="reveal">
     <h2 class="section-title">Experience</h2>
     <div class="timeline">
-      <div class="timeline-item left">
-        <div class="timeline-content">
+      <div class="timeline-item left reveal">
+        <div class="timeline-content" data-tilt data-tilt-max="5">
           <span class="date">Mar 2025 – Jul 2025</span>
           <h3>SNS Innovation Hub</h3>
           <p>Full Stack Developer & Graphic Designer</p>
         </div>
       </div>
-      <div class="timeline-item right">
-        <div class="timeline-content">
+      <div class="timeline-item right reveal">
+        <div class="timeline-content" data-tilt data-tilt-max="5">
           <span class="date">May 2024 – Jun 2024</span>
           <h3>Nandha Infotech</h3>
           <p>Full Stack Development Intern</p>
@@ -123,15 +132,14 @@
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="reveal">
     <h2 class="section-title">Featured Projects</h2>
     <div class="projects-grid">
 
-      <div class="project-card">
+      <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
         <div class="project-info">
           <h3 class="project-title">AI Personal Health Assistant</h3>
-          <p class="project-desc">An intelligent LLM-powered assistant providing personalized health insights and
-            monitoring.</p>
+          <p class="project-desc">An intelligent LLM-powered assistant providing personalized health insights and monitoring.</p>
           <div class="tech-stack">
             <span class="tech-tag">LLM</span>
             <span class="tech-tag">Python</span>
@@ -140,11 +148,10 @@
         </div>
       </div>
       
-      <div class="project-card">
+      <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
         <div class="project-info">
           <h3 class="project-title">Decentralized Key Exchange</h3>
-          <p class="project-desc">Secure communication protocol using decentralized networks for cryptographic key
-            exchange.</p>
+          <p class="project-desc">Secure communication protocol using decentralized networks for cryptographic key exchange.</p>
           <div class="tech-stack">
             <span class="tech-tag">Cryptography</span>
             <span class="tech-tag">Blockchain</span>
@@ -153,11 +160,10 @@
         </div>
       </div>
       
-      <div class="project-card">
+      <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
         <div class="project-info">
           <h3 class="project-title">Deepfake Detection</h3>
-          <p class="project-desc">Advanced detection system using deep learning to identify synthetic media and
-            deepfakes.</p>
+          <p class="project-desc">Advanced detection system using deep learning to identify synthetic media and deepfakes.</p>
           <div class="tech-stack">
             <span class="tech-tag">Deep Learning</span>
             <span class="tech-tag">Computer Vision</span>
@@ -166,7 +172,7 @@
         </div>
       </div>
       
-      <div class="project-card">
+      <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
         <div class="project-info">
           <h3 class="project-title">Thermal IR Super Resolution</h3>
           <p class="project-desc">Optical guided super-resolution technique to enhance low-res thermal imagery.</p>
@@ -180,10 +186,9 @@
     </div>
   </section>
 
- 
-  <section id="contact">
+  <section id="contact" class="reveal">
     <h2 class="section-title">Get In Touch</h2>
-    <div class="contact-container">
+    <div class="contact-container" data-tilt data-tilt-max="2" data-tilt-speed="400">
       <form>
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Your Name" required>
@@ -206,11 +211,36 @@
   </section>
 
   <footer>
-    <p>&copy; __a_v_in__</p>
+    <p>&copy; __a_v_in__ | Designed with <span style="color:var(--neon-purple);">♥</span> and AI</p>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/g5368cx-BE20u/a3x2bCgZk502RgvF/O37LzX8rM1tVmtNExhIXXW08z7w9T+1sT0kL19iQhQ1L4u4/nUHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script>
-    
+    // Cursor Tracking Glow
+    const cursorGlow = document.querySelector('.cursor-glow');
+    document.addEventListener('mousemove', (e) => {
+        cursorGlow.style.left = e.clientX + 'px';
+        cursorGlow.style.top = e.clientY + 'px';
+    });
+
+    // Scroll Reveal Animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Navbar Scroll Effect
     window.addEventListener('scroll', function () {
       const navbar = document.querySelector('.navbar');
       if (window.scrollY > 50) {
@@ -220,13 +250,13 @@
       }
     });
 
-    
+    // Mobile Menu Toggle
     function toggleMenu() {
       const navLinks = document.getElementById('nav-links');
       navLinks.classList.toggle('active');
     }
 
-    
+    // Typing Effect
     const textElement = document.getElementById('typing-text');
     const phrases = ["Building Intelligent Systems.", "Designing the Future.", "Exploring AI & Data Science."];
     let phraseIndex = 0;
@@ -261,13 +291,11 @@
 
     document.addEventListener('DOMContentLoaded', type);
 
-    
+    // Smooth Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
         document.getElementById('nav-links').classList.remove('active');
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
         });
